@@ -1,29 +1,31 @@
-name: FUN CUBA project CI
-on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: [master]
+name: Run tests
+
+on: [push]
+
 jobs:
   build:
-    env:
-      CI: true
-      MONGO_URL: mongodb://localhost/funCuba
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x, 20.x]
-        mongodb-version: ["7.0"]
-    runs-on: ubuntu-latest
+        node-version: [20.x, 22.x]
+        mongodb-version: ["6.0", "7.0", "8.0"]
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Nodejs ${{matrix.node-version}}
-        uses: actions/setup-node@v3
+      - name: Git checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{matrix.node-version}}
-      - name: MongoDB in GitHub Actions
-        uses: supercharge/mongodb-github-action@1.10.0
+          node-version: ${{ matrix.node-version }}
+
+      - name: Start MongoDB
+        uses: supercharge/mongodb-github-action@1.11.0
         with:
           mongodb-version: ${{ matrix.mongodb-version }}
+
       - run: npm install
-      - run: npm run build --prefix client
+
       - run: npm test
+        env:
+          CI: true
