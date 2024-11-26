@@ -1,75 +1,41 @@
-name: Replica Set Tests
+name: Run tests with authentication
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
-  single-node-replica-set-on-default-port:
-    name: MongoDB v${{ matrix.mongodb-version }} RS — Node.js v${{ matrix.node-version }}
+  build:
+    env:
+      CI: true
+      MONGO_URL: mongodb://localhost/funCuba
 
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18, 20]
+        node-version: [20.x, 22.x]
         mongodb-version: ["6.0", "7.0", "8.0"]
 
     steps:
-      - name: Checkout
+      - name: Git checkout
         uses: actions/checkout@v4
-
-      - name: Start MongoDB Server v${{ matrix.mongodb-version }}
-        uses: ./
-        with:
-          mongodb-version: ${{ matrix.mongodb-version }}
-          mongodb-replica-set: mongodb-test-rs
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run tests
-        run: npm test ./test/replica-set
-        env:
-          CI: true
-          MONGODB_REPLICA_SET: mongodb-test-rs
-
-  single-node-replica-set-on-custom-port:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18, 20]
-        mongodb-port: [23456]
-        mongodb-version: ["6", "7.0", "8.0"]
-
-    name: MongoDB v${{ matrix.mongodb-version }} RS, Port ${{ matrix.mongodb-port }} — Node.js v${{ matrix.node-version }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Start MongoDB Server v${{ matrix.mongodb-version }}
-        uses: ./
+      - name: Start MongoDB
+        uses: supercharge/mongodb-github-action@1.11.0
         with:
-          mongodb-port: ${{ matrix.mongodb-port }}
           mongodb-version: ${{ matrix.mongodb-version }}
-          mongodb-replica-set: mongodb-test-rs
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
+          mongodb-username: supercharge
+          mongodb-password: secret
+          mongodb-db: supercharge
 
       - name: Install dependencies
         run: npm install
 
-      - name: build client
+      - name: Run deploy
         run: npm run build --prefix client
 
       - name: Run tests
-        run: npm test ./test/replica-set
-        env:
-          CI: true
-          MONGODB_PORT: ${{ matrix.mongodb-port }}
-          MONGODB_REPLICA_SET: mongodb-test-rs
+        run: npm test
