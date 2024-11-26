@@ -8,8 +8,6 @@ async function getAllReviews(){
 
 
 async function addReview(review) {
-    console.log('add review')
-
     await Review.create(review);
 }
 

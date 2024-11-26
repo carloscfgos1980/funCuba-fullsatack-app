@@ -10,7 +10,6 @@ return res.status(200).json(await getAllTrips());
 
 async function httpAddTrip(req, res) {
     const trip = req.body
-    console.log(trip);
     const {totalAmount, reservationId, tripDateStart, tripDateEnd} = trip;
     const {name, lastName, country, email} = trip.clientData;
 
