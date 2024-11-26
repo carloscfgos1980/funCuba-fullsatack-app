@@ -1,4 +1,4 @@
-name: Run tests with authentication
+name: Run tests
 
 on: [push]
 
@@ -27,14 +27,13 @@ jobs:
         uses: supercharge/mongodb-github-action@1.11.0
         with:
           mongodb-version: ${{ matrix.mongodb-version }}
-          mongodb-username: supercharge
-          mongodb-password: secret
-          mongodb-db: supercharge
+          mongodb-replica-set: test-rs
+          mongodb-port: 42069
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run deploy
+      - name: Run build client
         run: npm run build --prefix client
 
       - name: Run tests
