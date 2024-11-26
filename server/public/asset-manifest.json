@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b9282882.css",
+    "main.js": "/static/js/main.adc7e246.js",
+    "static/media/nicho.png": "/static/media/nicho.3d9f2ac6b44ed7c8ae25.png",
+    "static/media/David_hab.png": "/static/media/David_hab.a1995fde2940b5e6d13a.png",
+    "static/media/havana.png": "/static/media/havana.0c25395d52172750a680.png",
+    "static/media/giron.png": "/static/media/giron.61b2baab2a889d95ffed.png",
+    "static/media/chilling.png": "/static/media/chilling.8cc407ce290254320392.png",
+    "static/media/celebration.gif": "/static/media/celebration.08ff63056c3079414b1e.gif",
+    "static/media/FunCuba-logo.jpeg": "/static/media/FunCuba-logo.c543bf87425dc9dd5ed9.jpeg",
+    "static/media/envelope-at-fill.svg": "/static/media/envelope-at-fill.68f25a7ccd73f7a88de37b80795fbe3c.svg",
+    "static/media/instagram.svg": "/static/media/instagram.448198b22019bf2f0b71355b8346c675.svg",
+    "index.html": "/index.html",
+    "static/media/facebook.svg": "/static/media/facebook.4172f094907a6837b8f36d120b55601b.svg",
+    "main.b9282882.css.map": "/static/css/main.b9282882.css.map",
+    "main.adc7e246.js.map": "/static/js/main.adc7e246.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9282882.css",
+    "static/js/main.adc7e246.js"
+  ]
+}
