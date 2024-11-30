@@ -34,3 +34,11 @@ docker run -it -p:8000:8000 carlosinfante1980/fun-cuba
 http://localhost:8000
 
 It works!
+
+I deploy with Sliplane.app. It's online!
+https://carlosinfante1980-fun-cuba.sliplane.app
+
+# 30/11/2024
+
+The web is online with the DNs that I bought!
+https://www.funcuba.it.com/
