@@ -403,3 +403,7 @@ Modal error from the console fixed. I deleted the <typography> tag
 
 const URL_REVIEWS = "v1/reviews";
 const URL_TRIPS = "v1/trips";
+
+# 1/12/2024
+
+Updating metadata
