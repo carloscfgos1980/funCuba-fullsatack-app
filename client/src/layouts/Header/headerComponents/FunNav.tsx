@@ -8,10 +8,10 @@ const FunNav = () => {
         <span>Home</span>
       </NavLink>
       <NavLink to="/airB">
-        <span>Air B&B</span>
+        <span>Airbnb</span>
       </NavLink>
       <NavLink to="/chill">
-        <span>Chilling</span>
+        <span>Chill Out</span>
       </NavLink>
       <NavLink to="/trip">
         <span>Trip</span>

@@ -45,11 +45,11 @@ const ModalAir = ({
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <div className="d-flex justify-content-between mx-5"
+          <div className="d-flex justify-content-between mx-2"
           >
             <p className="display-3 mt-5">"{name}"</p>
             <p
-              className="lead mt-3"
+              className="display-5 mt-3 me-3"
               onClick={toggle}
               style={{ cursor: "pointer" }}
             >
@@ -57,22 +57,23 @@ const ModalAir = ({
             </p>
           </div>
           <div>
-              <div className="row bg-light-subtle">
-                <div className="location row justify-content-center align-content-center g-5">
+              <div className="row">
+                <div className="location row justify-content-around my-5">
                   <img
-                    width="40%"
+                    width="30%"
                     src={itemSrc}
                     alt={name}
-                    className="text-center col-10 col-sm-5"
+                    className="text-center col-10 col-sm-4"
                   />
-                  <p className="col-sm-5 align-self-center lead">
+                  <p className="col-sm-6 align-self-center fs-3">
                     {description}
                   </p>
                 </div>
-                <div className="modalCarousel justify-content-center col-sm-10">
+                <div className="modalCarousel justify-content-center col-sm-10 mb-5">
+                  <p className="lead text-danger text-center">swipe to wathc the pics!</p>
                   <CarouselAirDetails items={items} />
                 </div>
-                <div className="reviews">            
+                <div className="reviews mx-2">            
                   {selectedFeeds.length > 0 ? <Reviews items={selectedFeeds}/> : <p className="display-5 text-center">No Reviews</p>
                   }
                 </div>

@@ -14,7 +14,7 @@ const TableGeneral = ({ arrive, departure, days, amount }: any) => {
           <td className="mx-2">{arrive}</td>
           <td className="mx-2">{departure}</td>
           <td className="mx-2">{days}</td>
-          <td className="mx-2">$ {amount}</td>
+          <td className="mx-2"> €{amount}</td>
         </tr>
       </tbody>
     </table>

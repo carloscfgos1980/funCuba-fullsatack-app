@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
 
+// const URL_REVIEWS = "http://localhost:8000/v1/reviews";
 const URL_REVIEWS = "v1/reviews";
 
 export type Review = {
@@ -14,6 +15,7 @@ export type Review = {
 
 type reviewsState = {
   reviews: Review[];
+  key: number;
   postSuccessful: boolean;
   searchfield: string;
   loading: boolean;
@@ -50,6 +52,7 @@ export const saveReviewsAsync = createAsyncThunk(
 
 const initialState: reviewsState = {
   reviews: [],
+  key: 0,
   postSuccessful: false,
   searchfield: "",
   loading: true,
@@ -73,6 +76,7 @@ export const filteredReviewsSlice = createSlice({
     );
     builder.addCase(saveReviewsAsync.fulfilled, (state) => {
       state.postSuccessful = true;
+      state.key++
     });
   },
 });

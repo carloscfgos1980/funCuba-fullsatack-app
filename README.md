@@ -42,3 +42,16 @@ https://carlosinfante1980-fun-cuba.sliplane.app
 
 The web is online with the DNs that I bought!
 https://www.funcuba.it.com/
+
+# 2/12/2024
+
+- Change $ for €
+- Erase "Dos Mares" from the AirData, cityDAta and the folder with the imaages. It is too expensive
+- Add key={key} to the root of ChillOut.tsx and AirB.tsx so it will reload once a feedback has been post it
+
+**ojo**
+delete public folder from server before I create the docker image!!!!!
+
+# 4/12/2024. Chango day!
+
+I edited the Modal for the Airbnb. It looks much better now. I also edited the modal for the tips, it is wider now. I edited the data for the description of "Las Hermanas" airbnb

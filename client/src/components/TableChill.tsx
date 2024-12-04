@@ -19,7 +19,7 @@ const TableChill = ({ items, deletingChill, modal }: any) => {
           return (
               <tr key={index}>
                 <td className="mx-2">{chill.name}</td>
-                <td className="mx-2">$ {chill.subTotal}</td>
+                <td className="mx-2"> €{chill.subTotal}</td>
                 <td className="mx-2">{dateChill}</td>
                 {modal === false && (
                   <td>

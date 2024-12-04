@@ -15,7 +15,7 @@ const TableAir = ({ items, deleteAirB, modal }: any) => {
             <tr key={index}>
               <td className="mx-2">{air.name}</td>
               <td className="mx-2">{air.hab}</td>
-              <td className="mx-2">$ {air.subTotal}</td>
+              <td className="mx-2"> €{air.subTotal}</td>
               {modal === false && (
                 <td>
                   <button onClick={() => deleteAirB(air.id)}>X</button>

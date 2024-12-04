@@ -9,7 +9,7 @@ const citiesData = [
       {
         idAirB: "analsa",
         name: "Analsa",
-        route: "havana/analsa/analsa8.png",
+        route: "havana/analsa/analsa1.png",
       },
       {
         idAirB: "jardin",
@@ -49,11 +49,6 @@ const citiesData = [
     description:
       "Cienfugos is another place that is not value in all its potential. It is a beautiful city with a french influence in architecture. There are planty of stuff to do at night, go to bars or nightclubs where you can try your dancing skills and how mucho alcohol you can put in your system. The city is fun to walk, enjoying the noise and friendly crowd, it won't take long before you find the sea. You can even use a “bicitaxi” (some drive you in his bike just like do in Asia) or a horse ride. \n The best of Cienfuegos is the logistic: \n 3 hours from Havana, 1.5 from Giron, 1 hour from Santa Clara, 1 hour from Trinidad, 45 minutes to natural park “El Nicho”. \n El Nicho is a waterfall so beautiful that will leave you breathless. Pure oxygen, just the sound of the birds and other creatures in the countryside. \n While you are in Cienfuegos you can enjoy of a ride thru the bay or just go to Rancho Luna beach \n I recommend 4 nights in Cienfuegos, there are plenty of choices where to pick!",
     airB: [
-      {
-        idAirB: "dos_mares",
-        name: "Dos Mares",
-        route: "cienfuegos/dos_mares/dos_mares1.png",
-      },
       {
         idAirB: "hermanas",
         name: "Hermanas",

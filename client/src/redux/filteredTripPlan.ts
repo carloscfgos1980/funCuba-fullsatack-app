@@ -1,6 +1,9 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
 
+// const URL_TRIPS = "http://localhost:8000/v1/trips";
+const URL_TRIPS = "v1/trips";
+
 export type AirBnB = {
   id: string;
   name: string | undefined;
@@ -71,7 +74,7 @@ type AddAirBnB = {
   subTotal: number;
 };
 
-const URL_TRIPS = "v1/trips";
+
 
 const saveTrip = async (trip: Trip) => {
   try {

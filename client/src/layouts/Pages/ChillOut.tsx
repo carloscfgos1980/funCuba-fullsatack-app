@@ -23,6 +23,7 @@ const ChillOut = () => {
   const [chillId, setChillId] = useState<string>("domino");
   
   const { reviews }: any = useAppSelector((state) => state.filteredReviews);
+  const { key }: any = useAppSelector((state) => state.filteredReviews);
 
   const selectedFeeds = reviews.filter((feed: any) => {
     return feed.feedId === chillId;
@@ -42,7 +43,7 @@ const ChillOut = () => {
 
   const itemSrc = `${process.env.PUBLIC_URL}/imagesChill/${selectedChill.image}`;
   return (
-    <div className="container-fluid bg-light py-3">
+    <div key={key} className="container-fluid bg-light py-3">
       <div className="row justify-content-center">
         <div className="Cuba">
           <Cuba img={chilling} text={pagesContent.chilling} />

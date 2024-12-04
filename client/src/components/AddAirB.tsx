@@ -86,10 +86,10 @@ const AddAirB = ({ city, daysRoute, modal }: any) => {
           </select>
         </div>
         <div className="price col-3 mt-2">
-          {seletedAir ? <p>price: $ {price}</p> : <p>price: 0</p>}
+          {seletedAir ? <p>price: € {price}</p> : <p>price: 0</p>}
         </div>
         <div className="subtotal col-3 mt-2">
-          {seletedAir ? <p> amount: ${subTotal}</p> : <p> amount: 0</p>}
+          {seletedAir ? <p> amount: €{subTotal}</p> : <p> amount: 0</p>}
         </div>
         <button className="col-3 btn btn-success mt-2" onClick={getAirB}>
           Add
@@ -97,7 +97,7 @@ const AddAirB = ({ city, daysRoute, modal }: any) => {
       </div>
       <div>
         <TableAir items={airBnBs} deleteAirB={deleteAirB} modal={modal} />
-        <p className="lead fw-bold">Total: {sum}</p>
+        <p className="lead fw-bold">Total: €{sum}</p>
       </div>
     </div>
   );

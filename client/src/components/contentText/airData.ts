@@ -7,7 +7,7 @@ const airData = [
     locationImg: "havana/locationHav/location-analsa.png",
     price: 35,
     hab: 2,
-    description: "It is very close from Paseo de Prado, the Capitol and the Malecon. It has 2 bedrooms (1 double bed and 1 personal bed) with private bathroom. Breakfast: $5. Hosts: Ana and Ruano",
+    description: "t is very close from Paseo de Prado, the Capitol and the Malecon. It has 2 bedrooms (1 double bed and 1 personal bed) with private bathroom. Breakfast: €5. Hosts: Ana and Ruano",
     airB: [
       {
         id: 1,
@@ -52,7 +52,7 @@ const airData = [
     price: 35,
     locationImg: "havana/locationHav/location-jardin.png",
     hab: 2,
-    description: "It is a beautiful colonial house with 4 bedrooms, 3 of them fit 4 people and 1 room fits 2 people. Breakfast: $ 5",
+    description: "It is a beautiful colonial house with 4 bedrooms, 3 of them fit 4 people and 1 room fits 2 people. Breakfast: €5",
     airB: [
       {
         id: 1,
@@ -97,54 +97,6 @@ const airData = [
     ],
   },
   {
-    id: "dos_mares",
-    name: "Dos Mares",
-    city: "Cienfuegos",
-    location: "Calle 35 entre avenida 0 y litoral",
-    locationImg: "cienfuegos/locationCfgos/location-dos_mares.png",
-    price: 40,
-    hab: 3,
-    description: "Terrace with a wonderful view towards the east and west of the bay of the city, hence its name Dos Mares!! Breakfast: $7. Host: Pepe",
-    airB: [
-      {
-        id: 1,
-        route: "cienfuegos/dos_mares/dos_mares1.png",
-      },
-      {
-        id: 2,
-        route: "cienfuegos/dos_mares/dos_mares2.png",
-      },
-      {
-        id: 3,
-        route: "cienfuegos/dos_mares/dos_mares3.png",
-      },
-      {
-        id: 4,
-        route: "cienfuegos/dos_mares/dos_mares4.png",
-      },
-      {
-        id: 5,
-        route: "cienfuegos/dos_mares/dos_mares5.png",
-      },
-      {
-        id: 6,
-        route: "cienfuegos/dos_mares/dos_mares6.png",
-      },
-      {
-        id: 7,
-        route: "cienfuegos/dos_mares/dos_mares7.png",
-      },
-      {
-        id: 8,
-        route: "cienfuegos/dos_mares/dos_mares8.png",
-      },
-      {
-        id: 9,
-        route: "cienfuegos/dos_mares/dos_mares9.png",
-      },
-    ],
-  },
-  {
     id: "hermanas",
     name: "Casa Las Hermanas",
     city: "Cienfuegos",
@@ -152,7 +104,7 @@ const airData = [
     locationImg: "cienfuegos/locationCfgos/location-hermanas.png",
     price: 30,
     hab: 3,
-    description: "A terrace overlooking the street. In the city center, approximately 300 m from Parque Martí and 50 m from Paseo del Prado. Breakfast: $5. Dinner: $15. host: Gian",
+    description: "Colonial house located in the Historic Center of Cienfuegos, just 50 meters from the main street “Paseo del Prado”, where most services are located for both daytime and nighttime enjoyment!! All rooms have air-conditioned and bathroom included! On the third level there is a terrace with sun or shade areas as desired by the client, to enjoy the weather!!! Breakfast: €5. Dinner: €15. Host: Gian",
     airB: [
       {
         id: 1,
@@ -200,7 +152,7 @@ const airData = [
     locationImg: "cienfuegos/locationCfgos/location-lalita.png",
     price: 30,
     hab: 4,
-    description: "Colonial House, located a few steps from the main José Marti square, with 4 totally independent rooms, each one has its private bathroom. It also has a patio with an outdoor garden where we offer coffee, breakfast and dinner services, at the same time, you will be able to delight yourself by observing some works of art made by local Cuban artists who love our culture and our traditions. Breakfast: $7. Dinner: $10. Host: Yesmel Caro",
+    description: "Colonial House, located a few steps from the main José Marti square, with 4 totally independent rooms, each one has its private bathroom. It also has a patio with an outdoor garden where we offer coffee, breakfast and dinner services, at the same time, you will be able to delight yourself by observing some works of art made by local Cuban artists who love our culture and our traditions. Breakfast: €7. Dinner: €10. Host: Yesmel Caro",
     airB: [
       {
         id: 1,
@@ -250,10 +202,9 @@ const airData = [
     city: "Cienfuegos",
     location: "calle 35 # 4215",
     locationImg: "cienfuegos/locationCfgos/location-luisa.png",
-    price: 30,
+    price: 35,
     hab: 4,
-    description:
-      "House located on the second level offering a beautiful view of the southern coast of the bay through its outdoor terraces, where you can see the sunset. With air-conditioned and comfortable rooms that make for a pleasant stay in our city! Breakfast: $6. Host: Luisa",
+    description: "House located on the second level offering a beautiful view of the southern coast of the bay through its outdoor terraces, where you can see the sunset. With air-conditioned and comfortable rooms that make for a pleasant stay in our city! Breakfast: €6. Host: Luisa",
     airB: [
       {
         id: 1,
@@ -297,7 +248,7 @@ const airData = [
     locationImg: "cienfuegos/locationCfgos/location-punta_pie.png",
     price: 30,
     hab: 2,
-    description: "Near the fortress of the same name. It has two air-conditioned rooms with two bathrooms included, two terraces with a wonderful view of Cienfuegos´ Bay entrance. The house also has a small beach area for clients and a dock from where boats leave that provide tours that are included in the offers of the house, as well as tours to Castillo Jagua, a property with historical and heritage values. Breakfast: $5. Dinner: $15. Host: Sahily",
+    description: "Near the fortress of the same name. It has two air-conditioned rooms with two bathrooms included, two terraces with a wonderful view of Cienfuegos´ Bay entrance. The house also has a small beach area for clients and a dock from where boats leave that provide tours that are included in the offers of the house, as well as tours to Castillo Jagua, a property with historical and heritage values. Breakfast: €5. Dinner: €15. Host: Sahily",
     airB: [
       {
         id: 1,

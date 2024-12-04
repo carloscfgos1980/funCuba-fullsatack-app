@@ -83,9 +83,9 @@ const AddChilling = ({ city, modal }: any) => {
             <option value="5">5</option>
           </select>
         </div>
-        <p className="col-3 mt-2">price: {price}</p>
+        <p className="col-3 mt-2">price: €{price}</p>
         {seletedChill ? (
-          <p className="col-3 mt-2">sub total: {subTotal}</p>
+          <p className="col-3 mt-2">sub total: €{subTotal}</p>
         ) : (
           <p className="col-3 mt-2">sub total: 0</p>
         )}

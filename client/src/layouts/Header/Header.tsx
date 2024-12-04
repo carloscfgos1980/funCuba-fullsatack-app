@@ -10,7 +10,7 @@ const Header = () => {
                 <div className="col-8 col-sm-3 align-self-center text-start">
                     <FunCubaLogo/>
                 </div>
-                <div className="col-sm-4 align-self-center py-2">
+                <div className="col-10 col-sm-4 align-self-center py-2">
                     <FunCubaTitle/>
                 </div>
                 <div className="col-sm-5 align-self-end text-end">

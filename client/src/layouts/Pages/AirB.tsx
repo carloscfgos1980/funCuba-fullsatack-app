@@ -7,6 +7,7 @@ import ModalFun from "../../components/ModalAir";
 import havana from "../../components/imagesPages/havana.png";
 import pagesContent from "../../components/contentText/pagesContent";
 import FormSelectItem from "../../components/FormSelectItem";
+import { useAppSelector } from "../../redux/configureStore";
 
 type AirBB = {
   idAirB: string;
@@ -37,6 +38,8 @@ const AirB = () => {
   const [cityId, setCityId] = useState<string>("Havana");
   const [airId, setAirId] = useState<string>("lalita");
   const [modal, setModal] = useState<boolean>(false);
+  const { key }: any = useAppSelector((state) => state.filteredReviews);
+
   const getCityId = (value: string): void => setCityId(value);
 
   const selectedCity: SelectedCity | any = citiesData.find(
@@ -57,7 +60,7 @@ const AirB = () => {
   );
 
   return (
-    <div className="container-fluid bg-light py-3">
+    <div key={key} className="container-fluid bg-light py-3">
       <div className="row justify-content-center">
         <Cuba img={havana} text={pagesContent.airBnBIntro} />
         <FormSelectItem getItemId={getCityId} items={citiesData}/> 
