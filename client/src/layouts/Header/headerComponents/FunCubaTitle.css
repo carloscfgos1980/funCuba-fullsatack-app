@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
 .title {
-  font-size: calc(10px + 6vh);
-  line-height: calc(8px + 8vh);
+  font-size: calc(10px + 4vh);
+  line-height: calc(6px + 6vh);
   /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
     0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
   color: #fccaff; */

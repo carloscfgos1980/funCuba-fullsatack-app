@@ -4,7 +4,7 @@ const FunCubaLogo = () => {
     return (
         <div >
             <img src={logo} 
-                width="40%"
+                width="50%"
                 className="d-inline-block align-center rounded-circle"
                 style={{borderStyle:"solid", borderWidth: "20%", borderColor: "orange"}}
                 alt="logo" />

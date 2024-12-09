@@ -21,8 +21,11 @@ const Home = () => {
   return (
     <div className=" bg-light">
       <div className="container-lg p-3">
+        <h1 className="display-4 text-center my-3">
+          Welcome! We are Fun Cuba!
+        </h1>
         <h1 className="display-5 text-center my-3">
-          Welcome! We are Fun Cuba. Let us show the real Cuba!
+          Discover the magic of this wonderful Island!
         </h1>
         <div className="Intro py-3">
           <div className="row justify-content-around g-5 px-lg-5">
@@ -34,6 +37,7 @@ const Home = () => {
             />
             <div className="col-10 col-sm-7">
               <p className="lead">{home.intro} </p>
+              <p className="lead">{home.services}</p>
               <div className="d-flex">
                 <span className="mx-2 px-2">
                   <CustomWidthTooltip title={home.tooltipAirB}>

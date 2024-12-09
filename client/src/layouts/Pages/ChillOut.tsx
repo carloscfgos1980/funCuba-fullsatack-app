@@ -46,7 +46,8 @@ const ChillOut = () => {
     <div key={key} className="container-fluid bg-light py-3">
       <div className="row justify-content-center">
         <div className="Cuba">
-          <Cuba img={chilling} text={pagesContent.chilling} />
+          <Cuba img={chilling} text={pagesContent.chillingI} />
+          <p className="lead m-4">{pagesContent.chillingII}</p>
         </div>
         <div className="form">
           <FormSelectItem getItemId={getCityId} items={citiesData}/> 

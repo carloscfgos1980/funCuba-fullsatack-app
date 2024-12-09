@@ -406,4 +406,10 @@ const URL_TRIPS = "v1/trips";
 
 # 1/12/2024
 
-Updating metadata
+Updating metadata. This gave a bit of headache. I need to delete the public folder in the server so the changes on the deploy website
+
+# 9/12/2024
+
+- Edit the Header so it look nicer
+- Edit the homepage, Airbnb and Chill out page for better UX
+- Checking all the spelling mistakes

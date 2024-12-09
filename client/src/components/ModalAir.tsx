@@ -11,7 +11,7 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: "90vw",
-  height: "70vh",
+  height: "90vh",
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
@@ -65,7 +65,7 @@ const ModalAir = ({
                     alt={name}
                     className="text-center col-10 col-sm-4"
                   />
-                  <p className="col-sm-6 align-self-center fs-3">
+                  <p className="col-sm-6 align-self-center my-3 fs-3">
                     {description}
                   </p>
                 </div>

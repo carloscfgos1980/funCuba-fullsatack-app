@@ -62,7 +62,8 @@ const AirB = () => {
   return (
     <div key={key} className="container-fluid bg-light py-3">
       <div className="row justify-content-center">
-        <Cuba img={havana} text={pagesContent.airBnBIntro} />
+        <Cuba img={havana} text={pagesContent.airBnBIntroI} />
+        <p className="lead mx-4">{pagesContent.airBnVIntroII}</p>
         <FormSelectItem getItemId={getCityId} items={citiesData}/> 
         <ModalFun
           modal={modal}

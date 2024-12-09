@@ -53,9 +53,7 @@ const Feedback = () => {
           <h1 className="text-center">Feedback</h1>
           <div className="intro">
             <p>
-              So cool that you take a give minutes of ur time to rate our
-              service.... for that we wanna thanks in advance! Would you,
-              please, share ur country
+              So cool that you take a few minutes of your time to rate our service.... for that we wanna thanks in advance! Would you, please, share ur country
             </p>
           </div>
           <div className="persona-data d-flex justify-content-around">
