@@ -413,3 +413,14 @@ Updating metadata. This gave a bit of headache. I need to delete the public fold
 - Edit the Header so it look nicer
 - Edit the homepage, Airbnb and Chill out page for better UX
 - Checking all the spelling mistakes
+
+# 11/12/2024
+
+- I need to make some adjust me in the extend of the text for better UX so I delete this cool code that make it looks like a maggazine article:
+
+        <p className="lead px-4" >
+          <img className="float-start col-sm-4 mx-4 my-2" width="50%" src={img} alt="city" />
+          {text}
+          </p>
+
+- I implemented a onClick event to show or hide text in Airbnb and Chill pages

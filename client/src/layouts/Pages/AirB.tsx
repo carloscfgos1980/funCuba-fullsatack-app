@@ -38,6 +38,8 @@ const AirB = () => {
   const [cityId, setCityId] = useState<string>("Havana");
   const [airId, setAirId] = useState<string>("lalita");
   const [modal, setModal] = useState<boolean>(false);
+  const [showText, setShowText] = useState<boolean>(false);
+
   const { key }: any = useAppSelector((state) => state.filteredReviews);
 
   const getCityId = (value: string): void => setCityId(value);
@@ -45,6 +47,7 @@ const AirB = () => {
   const selectedCity: SelectedCity | any = citiesData.find(
     (item) => item.id === cityId,
   );
+  const toggleText = (): void => setShowText(!showText);
 
   const toggle = (): void => setModal(!modal);
 
@@ -62,8 +65,7 @@ const AirB = () => {
   return (
     <div key={key} className="container-fluid bg-light py-3">
       <div className="row justify-content-center">
-        <Cuba img={havana} text={pagesContent.airBnBIntroI} />
-        <p className="lead mx-4">{pagesContent.airBnVIntroII}</p>
+        <Cuba img={havana} text1={pagesContent.airBnBIntroI} text2={pagesContent.airBnVIntroII} slogan={pagesContent.airSlogan} toggleText={toggleText} showText={showText}/>
         <FormSelectItem getItemId={getCityId} items={citiesData}/> 
         <ModalFun
           modal={modal}

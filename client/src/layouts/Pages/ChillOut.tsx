@@ -21,9 +21,12 @@ type SelectedChill = {
 const ChillOut = () => {
   const [cityId, setCityId] = useState<string>("Havana");
   const [chillId, setChillId] = useState<string>("domino");
-  
+  const [showText, setShowText] = useState<boolean>(false);  
+
   const { reviews }: any = useAppSelector((state) => state.filteredReviews);
   const { key }: any = useAppSelector((state) => state.filteredReviews);
+
+  const toggleText = (): void => setShowText(!showText);
 
   const selectedFeeds = reviews.filter((feed: any) => {
     return feed.feedId === chillId;
@@ -46,8 +49,7 @@ const ChillOut = () => {
     <div key={key} className="container-fluid bg-light py-3">
       <div className="row justify-content-center">
         <div className="Cuba">
-          <Cuba img={chilling} text={pagesContent.chillingI} />
-          <p className="lead m-4">{pagesContent.chillingII}</p>
+          <Cuba img={chilling} text1={pagesContent.chillingI} text2={pagesContent.chillingII} slogan={pagesContent.chillingSlogan} toggleText={toggleText} showText={showText}/>
         </div>
         <div className="form">
           <FormSelectItem getItemId={getCityId} items={citiesData}/> 
