@@ -395,6 +395,102 @@ const airData = [
       },
     ],
   },
+  {
+    id: "ernesto-marlenis",
+    name: "Hostal Ernesto & Marlenis",
+    city: "Trinidad",
+    location: "Carlos Echenagusia Peña (San Luis) No.20, Trinidad, Cuba",
+    locationImg: "trinidad/locationTrin/location_ernesto-marlenis.png",
+    price: 30,
+    hab: 1,
+    description: "House located near the historic center of Trinidad specifically behind the old beer house ruins of the brunet theater near the Plaza Mayor (Escalinata). Breakfasts: €7",
+    airB: [
+      {
+        id: 1,
+        route: "trinidad/ernesto-marlenis/ernesto-marlenis1.png",
+      },
+      {
+        id: 2,
+        route: "trinidad/ernesto-marlenis/ernesto-marlenis2.png",
+      },
+      {
+        id: 3,
+        route: "trinidad/ernesto-marlenis/ernesto-marlenis3.png",
+      },
+      {
+        id: 4,
+        route: "trinidad/ernesto-marlenis/ernesto-marlenis4.png",
+      },
+      {
+        id: 5,
+        route: "trinidad/ernesto-marlenis/ernesto-marlenis5.png",
+      },
+      {
+        id: 6,
+        route: "trinidad/ernesto-marlenis/ernesto-marlenis6.png",
+      },
+      {
+        id: 7,
+        route: "trinidad/ernesto-marlenis/ernesto-marlenis7.png",
+      },
+      {
+        id: 8,
+        route: "trinidad/ernesto-marlenis/ernesto-marlenis8.png",
+      }
+    ],
+  },
+  {
+    id: "nancy-jg",
+    name: "Hostal Nancy & JG",
+    city: "Trinidad",
+    location: "Gloria Street No.15 /Colon and Rosario",
+    locationImg: "trinidad/locationTrin/location_nancy-jg.png",
+    price: 30,
+    hab: 1,
+    description: "Outdoor terraces overlooking the historic center of the city of Trinidad. This hostel is located two blocks from the main square of Trinidad where most of the people are of bars and other night activities belongs to a friend's family. Breakfast only if the client requests it € 5 ",
+    airB: [
+      {
+        id: 1,
+        route: "trinidad/nancy-jg/nancy-jg1.png",
+      },
+      {
+        id: 2,
+        route: "trinidad/nancy-jg/nancy-jg2.png",
+      },
+      {
+        id: 3,
+        route: "trinidad/nancy-jg/nancy-jg3.png",
+      },
+      {
+        id: 4,
+        route: "trinidad/nancy-jg/nancy-jg4.png",
+      },
+      {
+        id: 5,
+        route: "trinidad/nancy-jg/nancy-jg5.png",
+      },
+      {
+        id: 6,
+        route: "trinidad/nancy-jg/nancy-jg6.png",
+      },
+      {
+        id: 7,
+        route: "trinidad/nancy-jg/nancy-jg7.png",
+      },
+      {
+        id: 8,
+        route: "trinidad/nancy-jg/nancy-jg8.png",
+      },
+      {
+        id: 9,
+        route: "trinidad/nancy-jg/nancy-jg9.png",
+      },
+      {
+        id: 10,
+        route: "trinidad/nancy-jg/nancy-jg10.png",
+      }
+    ],
+  },
 ];
 
 export default airData;

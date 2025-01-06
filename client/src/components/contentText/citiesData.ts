@@ -83,16 +83,16 @@ const citiesData = [
         name: "Hostal Liliana",
         route: "trinidad/liliana/liliana1.png",
       },
-      // {
-      // idAirB: 'obrapia',
-      // name: 'Obrapia',
-      // route: 'havana/obrapia/obrapia1.jpg'
-      // },
-      // {
-      // idAirB: 'vista_mar',
-      // name: 'Vista Mar',
-      // route: 'havana/vista_mar/vista1.jpg'
-      // }
+      {
+      idAirB: "ernesto-marlenis",
+      name: "Hostal Ernesto & Marlenis",
+      route: "trinidad/ernesto-marlenis/ernesto-marlenis1.png"
+      },
+      {
+      idAirB: "nancy-jg",
+      name: "Hostal Nancy & JG",
+      route: "trinidad/nancy-jg/nancy-jg10.png"
+      },
     ],
   },
    {
