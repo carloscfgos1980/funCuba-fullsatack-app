@@ -54,4 +54,9 @@ delete public folder from server before I create the docker image!!!!!
 
 # 4/12/2024. Chango day!
 
-I edited the Modal for the Airbnb. It looks much better now. I also edited the modal for the tips, it is wider now. I edited the data for the description of "Las Hermanas" airbnb
+-I edited the Modal for the Airbnb. It looks much better now. I also edited the modal for the tips, it is wider now. I edited the data for the description of "Las Hermanas" airbnb
+
+# 6/01/2025
+
+- Add a new Airbnb to Trinidad
+- Edited Linkedin url

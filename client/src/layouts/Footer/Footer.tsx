@@ -22,7 +22,7 @@ const Footer = () => {
                         </a >
                     </div>
                     <div className="linkedin">
-                            <a className="" href='https://www.linkedin.com/feed/update/urn:li:activity:7269222935976980480' target="_blank" rel="noreferrer">
+                            <a className="" href='https://www.linkedin.com/company/fun-cuba/' target="_blank" rel="noreferrer">
                                 <img className="orange p-1 rounded"  width='40p%' src={Linkedin} alt="Facebook" />
                             <p className="align-bottom">@fun-cuba</p>
                             </a>
